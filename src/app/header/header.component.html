@@ -1,0 +1,30 @@
+<mat-toolbar >
+    <button (click)="MenuBtnClicked()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Get Fit</span>
+    <span class="example-spacer"></span>
+<div class="flex-container">
+      <ul>
+          <li>
+                <button mat-icon-button class="example-icon settings-icon" aria-label="Example icon-button with heart icon">
+                  <mat-icon>settings</mat-icon>
+                </button>
+          </li>
+           <li>
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with help icon">
+                  <mat-icon>help_outline</mat-icon>
+                </button>
+           </li>
+           <li>
+                <button [matMenuTriggerFor]="menu" mat-icon-button class="example-icon" aria-label="Example icon-button with person icon">
+                    <mat-icon>person_outline</mat-icon>
+                  </button>
+                  <mat-menu #menu="matMenu">
+                    <button mat-menu-item> <mat-icon>logout</mat-icon>Log out</button>
+                    <button mat-menu-item>Delete Account <mat-icon>delete_forever</mat-icon></button>
+                  </mat-menu>
+           </li>
+      </ul>
+</div>
+  </mat-toolbar>

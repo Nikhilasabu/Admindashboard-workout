@@ -1,0 +1,46 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+mat-divider{
+    margin-top: 10px;   
+}
+
+.graph-chart{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.graph-chart .graph1{
+    width: 49%;
+    box-shadow: 5px 5px 20px rgb(157, 165, 251);
+}
+
+.graph-chart .chart{
+    width: 49%;
+    box-shadow: 5px 5px 20px rgb(184, 157, 251);
+}
+.pie-yearchart{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pie-yearchart .pie{
+    width: 39%;
+    box-shadow: 5px 5px 20px rgb(184, 157, 251);
+}
+
+.pie-yearchart .yearchart{
+    width: 59%;
+    box-shadow: 5px 5px 20px rgb(157, 165, 251);
+}
